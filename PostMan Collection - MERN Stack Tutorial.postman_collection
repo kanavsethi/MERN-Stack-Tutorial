@@ -1,0 +1,697 @@
+{
+	"info": {
+		"_postman_id": "3a250385-d6e6-43cb-8d54-ed140c82eb64",
+		"name": "MERN Stack Tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/users/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "chiyoko.takeda@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "chiyokotakeda",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Server Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Chiyoko Takeda",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chiyoko.takeda@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "chiyokotakeda",
+							"type": "text"
+						},
+						{
+							"key": "password2",
+							"value": "chiyokotakeda",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Current",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYmZjYzExNzBkMjVmMmI0YzhiOWFjNCIsIm5hbWUiOiJDaGl5b2tvIFRha2VkYSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYzgwZDdhNGFjZmUxZmMyN2ZhYjlkNGFlODFmZjVlNDM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTg5NjQ0OTY0LCJleHAiOjE1ODk2NDg1NjR9.ohdF3e_P79-MHwJ58M00zVZMoaMm-w0FjKgGypj-EXM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/users/current",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Current User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYmZjYzExNzBkMjVmMmI0YzhiOWFjNCIsIm5hbWUiOiJDaGl5b2tvIFRha2VkYSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYzgwZDdhNGFjZmUxZmMyN2ZhYjlkNGFlODFmZjVlNDM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTg5NjYzMDg1LCJleHAiOjE1ODk2NjY2ODV9.PraOAwhdB_ei7YV4dBtpLWSVBLTDV1Q0WNmV1dJTE90",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Create/Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYmZjYzExNzBkMjVmMmI0YzhiOWFjNCIsIm5hbWUiOiJDaGl5b2tvIFRha2VkYSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYzgwZDdhNGFjZmUxZmMyN2ZhYjlkNGFlODFmZjVlNDM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTg5NjUwNzQyLCJleHAiOjE1ODk2NTQzNDJ9.K2gni8L3MmyOPUkplCx4MVDxLipGFPiV9j43wIEy_qU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "handle",
+							"value": "kanav",
+							"type": "text"
+						},
+						{
+							"key": "youtube",
+							"value": "www.youtube.com",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "updated",
+							"type": "text"
+						},
+						{
+							"key": "linkedin",
+							"value": "www.linkedin.com",
+							"type": "text"
+						},
+						{
+							"key": "instagram",
+							"value": "www.instagram.com",
+							"type": "text"
+						},
+						{
+							"key": "skills",
+							"value": ",",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile by Handle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/kanav",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"kanav"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile by UserID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/user/5ebfcc1170d25f2b4c8b9ac4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"user",
+						"5ebfcc1170d25f2b4c8b9ac4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Add Experience",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYmZjYzExNzBkMjVmMmI0YzhiOWFjNCIsIm5hbWUiOiJDaGl5b2tvIFRha2VkYSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYzgwZDdhNGFjZmUxZmMyN2ZhYjlkNGFlODFmZjVlNDM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTg5NjYzMDg1LCJleHAiOjE1ODk2NjY2ODV9.PraOAwhdB_ei7YV4dBtpLWSVBLTDV1Q0WNmV1dJTE90",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "company",
+							"value": "Second Company",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Senior Software Dev",
+							"type": "text"
+						},
+						{
+							"key": "from",
+							"value": "2020-10-01",
+							"type": "text"
+						},
+						{
+							"key": "current",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/experience",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"experience"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Delete Experience",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYmZjYzExNzBkMjVmMmI0YzhiOWFjNCIsIm5hbWUiOiJDaGl5b2tvIFRha2VkYSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYzgwZDdhNGFjZmUxZmMyN2ZhYjlkNGFlODFmZjVlNDM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTg5NjYxNzM5LCJleHAiOjE1ODk2NjUzMzl9.baCtM_EHUfJ_z7cSZ6KM-se-w4pblsnX0qIV_C2RwSE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "experienceId",
+							"value": "5ec057cd72a3230c345e8b3d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/experience",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"experience"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile List All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/all/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"all",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Add Education",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYmZjYzExNzBkMjVmMmI0YzhiOWFjNCIsIm5hbWUiOiJDaGl5b2tvIFRha2VkYSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYzgwZDdhNGFjZmUxZmMyN2ZhYjlkNGFlODFmZjVlNDM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTg5NjYzMDg1LCJleHAiOjE1ODk2NjY2ODV9.PraOAwhdB_ei7YV4dBtpLWSVBLTDV1Q0WNmV1dJTE90",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Delete Education",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYmZjYzExNzBkMjVmMmI0YzhiOWFjNCIsIm5hbWUiOiJDaGl5b2tvIFRha2VkYSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYzgwZDdhNGFjZmUxZmMyN2ZhYjlkNGFlODFmZjVlNDM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTg5NjYzMDg1LCJleHAiOjE1ODk2NjY2ODV9.PraOAwhdB_ei7YV4dBtpLWSVBLTDV1Q0WNmV1dJTE90",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "educationId",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYmZjYzExNzBkMjVmMmI0YzhiOWFjNCIsIm5hbWUiOiJDaGl5b2tvIFRha2VkYSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYzgwZDdhNGFjZmUxZmMyN2ZhYjlkNGFlODFmZjVlNDM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTg5NzA5MzI1LCJleHAiOjE1ODk3MTI5MjV9.ve3QYYttawR75Ocewwa9H69lNlyAKxFl6FnpY8tzDuE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "text",
+							"value": "Hey no text",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "abcd",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"value": "asdfasdfadsf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Like",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYmZjYzExNzBkMjVmMmI0YzhiOWFjNCIsIm5hbWUiOiJDaGl5b2tvIFRha2VkYSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYzgwZDdhNGFjZmUxZmMyN2ZhYjlkNGFlODFmZjVlNDM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTg5NzA5MzI1LCJleHAiOjE1ODk3MTI5MjV9.ve3QYYttawR75Ocewwa9H69lNlyAKxFl6FnpY8tzDuE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/like/5ec10c0ed9953923f02638d4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"like",
+						"5ec10c0ed9953923f02638d4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Unlike",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYmZjYzExNzBkMjVmMmI0YzhiOWFjNCIsIm5hbWUiOiJDaGl5b2tvIFRha2VkYSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYzgwZDdhNGFjZmUxZmMyN2ZhYjlkNGFlODFmZjVlNDM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTg5NzA5MzI1LCJleHAiOjE1ODk3MTI5MjV9.ve3QYYttawR75Ocewwa9H69lNlyAKxFl6FnpY8tzDuE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/unlike/5ec10c0ed9953923f02638d4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"unlike",
+						"5ec10c0ed9953923f02638d4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Add Comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYmZjYzExNzBkMjVmMmI0YzhiOWFjNCIsIm5hbWUiOiJDaGl5b2tvIFRha2VkYSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYzgwZDdhNGFjZmUxZmMyN2ZhYjlkNGFlODFmZjVlNDM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTg5NzA5MzI1LCJleHAiOjE1ODk3MTI5MjV9.ve3QYYttawR75Ocewwa9H69lNlyAKxFl6FnpY8tzDuE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "text",
+							"value": "Here is a comment",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts/comment/5ec10c0ed9953923f02638d4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"comment",
+						"5ec10c0ed9953923f02638d4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Delete Comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYmZjYzExNzBkMjVmMmI0YzhiOWFjNCIsIm5hbWUiOiJDaGl5b2tvIFRha2VkYSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvYzgwZDdhNGFjZmUxZmMyN2ZhYjlkNGFlODFmZjVlNDM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTg5NzA5MzI1LCJleHAiOjE1ODk3MTI5MjV9.ve3QYYttawR75Ocewwa9H69lNlyAKxFl6FnpY8tzDuE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/posts/comment/5ec10c0ed9953923f02638d4/5ec111827c8f671acc9b07d3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"comment",
+						"5ec10c0ed9953923f02638d4",
+						"5ec111827c8f671acc9b07d3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
